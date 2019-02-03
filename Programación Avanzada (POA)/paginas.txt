@@ -1,0 +1,2 @@
+https://www.avajava.com/tutorials/lessons/decorator-pattern.html
+https://www.google.com.ar/search?q=pattern+decorator+java+eclipse&rlz=1C1GCEU_esAR819AR819&oq=pattern+decorator+java+eclipse&aqs=chrome..69i57.4463j0j1&sourceid=chrome&ie=UTF-8

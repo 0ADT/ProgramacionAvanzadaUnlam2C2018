@@ -1,0 +1,35 @@
+numero(1).
+numero(2).
+numero(3).
+
+menor(X,Y):-X<Y.
+
+item(turron, 8).
+item(cafe, 30).
+item(medialuna, 10).
+item(alfajor, 30).
+
+prod_cart1(X,Y):-item(_,X),item(_,Y).
+seleccion1(X,Y):-prod_cart1(X,Y),X<Y.
+proyeccion1(X):-seleccion1(X,_).
+maximo1(X):-item(_,X),not(proyeccion1(X)).
+max_prod(Y):-item(Y,X),maximo1(X).
+
+prod_cart(X,Y):-numero(X),numero(Y).
+seleccion(X,Y):-prod_cart(X,Y),X<Y.
+proyeccion(X):-seleccion(X,_).
+
+maximo(X):-numero(X),not(proyeccion(X)).
+
+mostrar_maximo():-maximo(X),write(X),nl,fail.
+mostrar_maximo1():-maximo1(X),write(X),nl,fail.
+
+trios(X,Y,Z):-numero(X),numero(Y),!,numero(Z).
+
+
+
+
+
+
+
+
